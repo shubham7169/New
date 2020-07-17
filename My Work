@@ -1,0 +1,7 @@
+Make folder of images
+
+length=len(label)
+for i in range(length):
+    if label['target'][i]=='sattriya':
+        im1 = Image.open(r"C:/Users/SHUBHAM/Desktop/kaggle/dataset//train/"+label['Image'][i])
+        im1 = im1.save("/data/sattriya/{}.jpg".format(i))
